@@ -15,12 +15,6 @@ export default function Footer() {
                         <div className="flex flex-col items-center ">
                             <Image src="/logowhite.png" className="h-16 object-contain object-center" alt="Logo" height={50} width={70} />
                             <h1 className="ml-3 font-extrabold text-2xl text-center">Rayane<br />Benamre</h1>
-                            <div className="h-16 w-full text-4xl inline-flex gap-4 items-center justify-center">
-                                <Icon href="/" icon={faInstagram} />
-                                <Icon href="/" icon={faTwitter} />
-                                <Icon href="/" icon={faFacebook} />
-                                <Icon href="/" icon={faDiscord} />
-                            </div>
                         </div>
                     </FooterSect>
                     <FooterSect>
@@ -49,8 +43,14 @@ export default function Footer() {
                         </ul>
                     </FooterSect>
                 </div>
-                <div className="w-full flex items-center justify-center">
+                <div className="w-full flex items-center justify-between px-8">
                     <p className="text-white text-xl font-bold py-4">Copyright &copy; 2023 Rayane Benamre</p>
+                    <div className="h-16 text-4xl inline-flex gap-6 items-center justify-center text-white">
+                        <Icon href="/" icon={faInstagram} />
+                        <Icon href="/" icon={faTwitter} />
+                        <Icon href="/" icon={faFacebook} />
+                        <Icon href="/" icon={faDiscord} />
+                    </div>
                 </div>
             </div>
         </footer>
